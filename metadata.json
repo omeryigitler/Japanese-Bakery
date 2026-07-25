@@ -1,0 +1,8 @@
+{
+  "name": "Kyoto Japanese Bakery",
+  "description": "A minimalist, Japanese-style bakery landing page with smooth scroll animations.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

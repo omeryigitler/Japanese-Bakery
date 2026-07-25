@@ -56,20 +56,20 @@ export default function App() {
           </div>
 
           {/* Top Nav (Fixed) */}
-          <div className="absolute top-6 sm:top-12 left-0 w-full z-50 flex justify-center items-start gap-12 sm:gap-24 px-6 pointer-events-none">
-            <div className="text-center mt-2">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-cyan-900/90 font-bold">Kyoto, Japan</p>
-              <p className="font-serif text-sm sm:text-lg text-cyan-950 mt-1 font-medium">京都</p>
+          <div className="absolute top-4 sm:top-10 left-0 w-full z-50 flex justify-center items-start gap-8 sm:gap-24 px-4 sm:px-6 pointer-events-none">
+            <div className="text-center mt-1 sm:mt-2">
+              <p className="text-[9px] sm:text-[10px] tracking-[0.3em] uppercase text-cyan-900/90 font-bold">Kyoto, Japan</p>
+              <p className="font-serif text-xs sm:text-lg text-cyan-950 mt-0.5 sm:mt-1 font-medium">京都</p>
             </div>
-            <div className="font-serif text-5xl sm:text-6xl text-[#087ca8] drop-shadow-md font-normal">茶</div>
-            <div className="text-center mt-2">
-              <p className="text-[10px] tracking-[0.3em] uppercase text-cyan-900/90 font-bold">Sliema, Malta</p>
-              <p className="font-serif text-sm sm:text-lg text-cyan-950 mt-1 font-medium">マルタ</p>
+            <div className="font-serif text-4xl sm:text-6xl text-[#087ca8] drop-shadow-md font-normal">茶</div>
+            <div className="text-center mt-1 sm:mt-2">
+              <p className="text-[9px] sm:text-[10px] tracking-[0.3em] uppercase text-cyan-900/90 font-bold">Sliema, Malta</p>
+              <p className="font-serif text-xs sm:text-lg text-cyan-950 mt-0.5 sm:mt-1 font-medium">マルタ</p>
             </div>
           </div>
 
           {/* Page Content */}
-          <div className="absolute inset-0 z-10 pt-32 pb-32">
+          <div className="absolute inset-0 z-10 pt-16 sm:pt-20 pb-16 sm:pb-20">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={currentIndex}
@@ -79,7 +79,7 @@ export default function App() {
                 animate="center"
                 exit="exit"
                 transition={{ type: "tween", duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-                className="w-full h-full no-scrollbar overflow-y-auto px-6 sm:px-12"
+                className="w-full h-full no-scrollbar overflow-y-auto px-4 sm:px-12 flex flex-col justify-center"
               >
                 <CurrentPage />
               </motion.div>
@@ -87,7 +87,7 @@ export default function App() {
           </div>
 
           {/* Bottom Nav (Fixed) */}
-          <div className="absolute bottom-6 sm:bottom-12 left-0 w-full z-50 flex justify-between items-end px-6 sm:px-12 pointer-events-none">
+          <div className="absolute bottom-4 sm:bottom-10 left-0 w-full z-50 flex justify-between items-end px-4 sm:px-12 pointer-events-none">
             <button 
               onClick={() => paginate(-1)}
               className="pointer-events-auto group text-[10px] font-bold tracking-[0.2em] uppercase flex items-center gap-4 sm:gap-6 text-cyan-950 hover:text-[#087ca8] transition-colors drop-shadow-sm"

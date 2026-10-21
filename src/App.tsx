@@ -33,7 +33,8 @@ export default function App() {
     }),
   };
 
-  return (
+  return (<>
+
     <main className="min-h-screen bg-[#e8f4f8] font-sans text-cyan-950 selection:bg-pink-200 selection:text-pink-900 relative">
       <div className="relative h-screen w-full flex items-center justify-center p-4 sm:p-8 overflow-hidden">
         <div className="relative w-full h-full border border-cyan-200/50 rounded-2xl sm:rounded-3xl overflow-hidden flex flex-col items-center justify-center shadow-xl bg-[#e8f4f8]">
@@ -136,5 +137,7 @@ export default function App() {
         </div>
       </div>
     </main>
+<footer className="relative w-full px-4 py-4 text-center bg-[#e8f5f7] text-cyan-950"><a href="https://omeryigitler.com" target="_blank" rel="noopener noreferrer" className="inline-flex min-h-[44px] max-w-full flex-wrap items-center justify-center gap-x-1 text-xs leading-relaxed underline-offset-4 transition-colors hover:underline focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 motion-reduce:transition-none"><span>Designed &amp; developed by</span> <span className="font-medium">Ömer YİĞİTLER</span><span aria-hidden="true"> ↗</span></a></footer>
+    </>
   );
 }
